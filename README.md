@@ -1,4 +1,4 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).<br />
 You can see the application in action by clicking on the link https://oleg724.github.io/pokedex/.
 
 ## Available Scripts
