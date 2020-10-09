@@ -3,8 +3,17 @@
 In this application, you can see a list of all Pokemon registered on the service https://pokeapi.co.<br />
 and get detailed information on each one.<br />
 <br />
+You can see the appplication in action by clicking on the link https://oleg724.github.io/pokedex.<br />
+<br />
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).<br />
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## QUICK START
+
+1. Download ZIP files<br />
+2. Unzip files to your local folder<br />
+3. Open unzipped folder in your IDE<br />
+4. Run command "npm i" (node.js must be installed)<br />
+5. Run command "npm start"<br />
 
 ## Available Scripts
 
