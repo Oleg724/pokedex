@@ -1,4 +1,4 @@
-POKEDEX APP
+# POKEDEX APP
 
 In this application, you can see a list of all Pokemon registered on the service https://pokeapi.co.<br />
 and get detailed information on each one.<br />
