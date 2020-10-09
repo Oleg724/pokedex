@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f8f9fa;
+    font-family: 'Heebo', sans-serif;
+}
+
+.app {
+    margin: 0 auto;
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 1100px;
+    border: 1px solid #e6e8e9;
+    box-shadow: 0 0 4px 0 #e6e8e9;
+    padding: 10% 10%;
+}
+
+@media screen and (max-width: 992px) {
+    .app {
+        width: 85%;
+        max-width: initial;
+        padding: 10% 5%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .app {
+        width: 95%;
+        padding: 10% 3%;
+    }
+}

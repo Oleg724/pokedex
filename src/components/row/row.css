@@ -1,0 +1,27 @@
+.row {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    padding: 0 0 30px 0;
+    position: relative;
+}
+
+.row--sm {
+    min-width: 248px;
+    display: flex;
+    align-items: flex-start;
+    margin-left: 6%;
+    padding-top: 221px;
+}
+
+@media screen and (max-width: 612px) {
+    .row {
+        justify-content: center;
+    }        
+}
+
+@media screen and (max-width: 450px) {
+    .row--sm {
+        min-width: initial;
+    }
+}

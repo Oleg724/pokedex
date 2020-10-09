@@ -1,0 +1,16 @@
+.types-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.types-list__item {
+    margin: 5px 3px 0px 10px;
+}
+
+@media screen and (max-width: 612px) {
+    .types-list__item {
+        margin: 5px auto;
+    }   
+}
