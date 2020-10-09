@@ -1,3 +1,9 @@
+POKEDEX APP
+
+In this application, you can see a list of all Pokemon registered on the service https://pokeapi.co.<br />
+and get detailed information on each one.<br />
+<br />
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
