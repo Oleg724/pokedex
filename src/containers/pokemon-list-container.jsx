@@ -9,6 +9,21 @@ class PokemonListContainer extends Component {
         list: [],
     };
 
+    updateList(propsList) {
+        const { list } = this.state;
+        const lastListItemId = list[list.length - 1].id;
+        const lastPropsListItemId = propsList[propsList.length - 1].id;
+
+        if (lastListItemId === lastPropsListItemId) {
+            return list;
+        }
+
+        return [
+            ...list,
+            ...propsList
+        ]
+    }
+
     componentDidMount() {
         const { data, onNextLinkUpdate } = this.props;
 
@@ -20,17 +35,15 @@ class PokemonListContainer extends Component {
     };
 
     componentDidUpdate(prevProps, prevState) {
-        const { data, url, onNextLinkUpdate, chunksOnPage } = this.props;
+        const { data, onNextLinkUpdate, chunksOnPage } = this.props;
 
         if ( onNextLinkUpdate !== prevProps.onNextLinkUpdate 
-            || url !== prevProps.url
-            || data !== prevProps.data
-            || chunksOnPage !== prevProps.chunksOnPage
-            || this.state.list !== prevState.list) {
+            || data.list !== prevProps.data.list
+            || data.next !== prevProps.data.next
+            || chunksOnPage !== prevProps.chunksOnPage) {
 
                 this.setState({ 
-                    list: data.list,
-                    nextChunkList: url 
+                    list: this.updateList(data.list),
                 });
 
                 onNextLinkUpdate(data.next);

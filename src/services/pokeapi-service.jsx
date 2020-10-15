@@ -8,7 +8,12 @@ export default class PokeapiService extends Component {
     const response = await fetch(url);
 
     if (!response.ok) {
-      throw new Error(`Could not fetch ${url}, received ${response.status}`)
+      // option with displaying list under any conditions
+
+      // const id = this._extractId(url);
+      // this.getResource(`https://pokeapi.co/api/v2/pokemon/${id + 1}/`); 
+      
+      throw new Error(`Could not fetch ${url}, received ${response.status}`);
     }
   
     return await response.json();
@@ -56,12 +61,12 @@ export default class PokeapiService extends Component {
     });
   };
 
-  _transformPokemon = (pokemon) => {
+  _transformPokemon = ({ id, name, types, sprites }) => {
     return {
-      id: pokemon.id,
-      name: pokemon.name,
-      types: this._transformTypes(pokemon.types),
-      image: pokemon.sprites.front_default
+      id: id,
+      name: name,
+      types: this._transformTypes(types),
+      image: sprites.front_default
     };
   };
 

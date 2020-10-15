@@ -6,17 +6,18 @@ const withData = (View) => {
   
       state = {
         data: null,
+        loading: true
       };
 
       componentDidUpdate(prevProps) {
-        const { getData, url, chunksOnPage } = this.props;
+        const { getData, chunksOnPage } = this.props;
 
         if (getData !== prevProps.getData
           || chunksOnPage !== prevProps.chunksOnPage) {
 
-          if (url !== prevProps.url && chunksOnPage !== prevProps.chunksOnPage) {
+          // if (url !== prevProps.url && chunksOnPage !== prevProps.chunksOnPage) {
             this.update();
-          }        
+          // }        
         }
       };
     
@@ -30,7 +31,7 @@ const withData = (View) => {
         getData(url)
           .then((data) => {
             this.setState({
-              data,
+              data
             });
           });
       };
