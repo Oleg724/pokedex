@@ -23,13 +23,13 @@ body {
     .app {
         width: 85%;
         max-width: initial;
-        padding: 10% 5%;
+        padding: 3% 5%;
     }
 }
 
 @media screen and (max-width: 992px) {
     .app {
         width: 95%;
-        padding: 10% 3%;
+        padding: 3% 3%;
     }
 }

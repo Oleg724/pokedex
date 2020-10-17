@@ -11,7 +11,10 @@
     display: flex;
     align-items: flex-start;
     margin-left: 6%;
-    padding-top: 221px;
+    position: sticky;
+    top: 47%;
+    transform: translateY(-35%);
+    height: 100%;
 }
 
 @media screen and (max-width: 612px) {
